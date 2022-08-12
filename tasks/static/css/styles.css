@@ -1,0 +1,50 @@
+ul {
+    list-style-type: none;
+}
+.remove:hover { 
+    color: red;
+}
+.remove {
+    text-decoration: none;
+}
+.checked { 
+    margin-right: 10px;
+}
+h1 {
+    padding-top: 20px;
+    padding-left: 28px;
+}
+#todo-list {
+    padding-top: 30px;
+}
+.container {
+    width: 700px;
+}
+.text-task {
+    font-weight: bold;
+    font-size: 20px;
+}
+.name {
+    font-size: 50px;
+}
+
+.remove::after {
+    font-size: 28px;
+    float: right;
+    content: "×";
+  }
+.link_create {
+    color: black;
+    text-decoration: none;
+}
+.link_create:hover {
+    color: black;
+}
+.button-creat {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+.add-task {
+    padding-top: 10px;
+    margin-left: 20px;
+}

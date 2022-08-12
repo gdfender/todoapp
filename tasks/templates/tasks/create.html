@@ -5,10 +5,10 @@
 
 {% block main_content %}
         <h1>Создать форму</h1>
-        <form action="/tasks/add-task/" method="post" class="row g-3 add-task">
+        <form action="." method="post" class="row g-3 add-task">
             {% csrf_token %}
             <div class="col-auto myclass">
-                <input type="text" name="description" class="form-control">
+                {{ form }}
             </div>
             <div class="col-auto">
                 <button class="add btn btn-primary mb-3" type="submit">Добавить</button>

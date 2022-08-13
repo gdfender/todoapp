@@ -13,7 +13,7 @@
         {% for task in tasks %}
         {% if task.is_completed %}
         <li class="completed">
-            <input class="checked" 
+            <input  
                    data-uid="{{ task.id }}" 
                    type="checkbox"
                    disabled="disabled"
@@ -21,8 +21,7 @@
         </li>
         {% else %}
         <li class="text-task">
-            <input class="checked"
-                   data-uid="{{ task.id }}"
+            <input data-uid="{{ task.id }}"
                    type="checkbox">
             {% endif %}
             {{ task }}

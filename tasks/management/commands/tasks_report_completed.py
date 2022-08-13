@@ -11,8 +11,10 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         now = datetime.now(timezone.utc)
+        for t in TodoItem.objects.filter(is_completed=False):
+            print("Не выполненые задачи:", t, t.created)
 
-      
-        '''for t in TodoItem.objects.filter(is_completed=False):
-            if (now - t.created).days >= options['days']:
-                print("Старая задача:", t, t.created)'''
+"""
+    Тут нужно переделать а именено is_complited = True. Но нужно связать в list.html
+    checkbox с базой данных. 
+"""

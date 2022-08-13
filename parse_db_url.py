@@ -18,4 +18,3 @@ def parse_db_url(db_link):
         }
         return exit
     raise ValueError('Ошибка')
-#ew

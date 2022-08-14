@@ -34,7 +34,6 @@ class TaskCreateView(View):
             return redirect("/tasks/list")
 
         return render(request, "tasks/create.html", {"form": form})
-
     def get(self, request, *args, **kwargs):
         form = TodoItemForm()
         return render(request, "tasks/create.html", {"form": form})

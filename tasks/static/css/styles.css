@@ -48,3 +48,15 @@ h1 {
     padding-top: 10px;
     margin-left: 20px;
 }
+.link_back_detals:hover {
+    color:red
+}
+.link_back_detals  {
+    text-decoration: none
+}
+.name_tasks {
+    text-decoration: none;
+}
+.name_tasks:hover {
+    color:red 
+}
